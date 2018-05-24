@@ -11,8 +11,8 @@ step 2 : SETUP THE DATABASE
 
 step 3 :config môi trường
 -------
-  -mở file data_config.php </br>
-  -sửa lại username và password của mysql cho chuẩn </br>
+  - mở file data_config.php </br>
+  - sửa lại username và password của mysql cho chuẩn </br>
     [đoạn code sau : </br>
       private $host = "localhost"; </br>
       private $db_name = "web_Api"; </br>
