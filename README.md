@@ -1,48 +1,44 @@
 # php_web_api
-step 1 : clone source code 
+step 1 : clone source code </br>
 -------
-  - clone source code về máy,đặt tại thư mục root của xamp 
+  - clone source code về máy,đặt tại thư mục root của xamp </br>
 
 step 2 : SETUP THE DATABASE
 -------
-  - sử dụng phpmyadmin, tạo database 'web_Api' 
-  - sau đó chọn tệp users.sql import vào database 'web_Api'.  
-  - hoặc có thể chạy trực tiếp lệnh sql trong file users.sql  
+  - sử dụng phpmyadmin, tạo database 'web_Api' </br>
+  - sau đó chọn tệp users.sql import vào database 'web_Api'.  </br>
+  - hoặc có thể chạy trực tiếp lệnh sql trong file users.sql  </br>
 
 step 3 :config môi trường
 -------
-  -mở file data_config.php 
-  -sửa lại username và password của mysql cho chuẩn 
-    [đoạn code sau : 
-      private $host = "localhost"; 
-      private $db_name = "web_Api"; 
-      private $username = "root"; 
-      private $password = " "; 
-    ] 
+  -mở file data_config.php </br>
+  -sửa lại username và password của mysql cho chuẩn </br>
+    [đoạn code sau : </br>
+      private $host = "localhost"; </br>
+      private $db_name = "web_Api"; </br>
+      private $username = "root"; </br>
+      private $password = " "; </br>
+    ] </br>
 
 step 4 : chạy thử 
 -------
-  - chạy xamp và start apache và mysql lên 
-  - truy cập các linh sau trên trình duyệt để kiểm tra kết quả lấy thông tin người sử dụng.  
-    http://localhost/list.php 
-    http://localhost/view.php?id=1 
-    chú ý : sửa localhost thành ServerName của bạn  
-  - sử dụng postman hoặc 1 tool nào đó ..... gửi 1 post request tới link sau để thực hiện new a recode 
-    http://localhost/create.php với data là : 
-      [ 
-      "email" => "an12@gmail.com", 
-      "name" => "an", 
-      "address" => "ha noi", 
-      "tel" => "0123743984" 
+  - chạy xamp và start apache và mysql lên </br>
+  - truy cập các linh sau trên trình duyệt để kiểm tra kết quả lấy thông tin người sử dụng.  </br>
+    http://localhost/list.php </br>
+    http://localhost/view.php?id=1 </br>
+    chú ý : sửa localhost thành ServerName của bạn  </br>
+  - sử dụng postman hoặc 1 tool nào đó ..... gửi 1 post request tới link sau để thực hiện new a recode </br>
+    http://localhost/create.php với data là : </br>
+      [ </br>
+      "email" => "an12@gmail.com", </br>
+      "name" => "an", </br>
+      "address" => "ha noi", </br>
+      "tel" => "0123743984" </br>
       ]
-  - sử dụng postman hoặc 1 tool nào đó ..... gửi 1 post request tới link sau để thực hiện update: 
-    http://localhost/update.php?id=1 với data là : 
-      [ 
-      "name" => "an", 
-      "address" => "ha noi", 
-      "tel" => "0123743984" 
+  - sử dụng postman hoặc 1 tool nào đó ..... gửi 1 post request tới link sau để thực hiện update: </br>
+    http://localhost/update.php?id=1 với data là : </br>
+      [ </br>
+      "name" => "an", </br>
+      "address" => "ha noi", </br>
+      "tel" => "0123743984" </br>
       ]
-
-
-
-
